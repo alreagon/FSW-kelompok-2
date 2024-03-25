@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .blog-section {
+            background-color: #f5f5f5
+        }
+        .card {
+            transition: .5s;
+            cursor: pointer;
+            border-radius: 10px;
+            position: relative;
+        }
+        .card:hover {
+            transform: scale(1.015);
+            transition: .3s;
+        }
+        .float-left {
+            position: absolute;
+            height: 32px;
+            background-color: #fff;
+            border-radius: 5px;
+            left: 10px;
+            top: 10px;
+            padding: 5px 15px;
+        }
+        .feedback {
+            position: fixed;
+            top: 43%;
+            width: 40px;
+            height: 110px;
+            background-color: #f89c1b;
+            border: 0;
+            right: 0;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            border-radius: 3px 0 0 3px;
+        }
+        .feedback p {
+            writing-mode:tb-rl;
+            -webkit-transform:rotate(-90deg);
+            -moz-transform:rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            -ms-transform:rotate(-90deg);
+            transform: rotate(180deg);
+            width: 100%;
+            height: 100%;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+        .whatsapp {
+            position: fixed;
+            width: 56px;
+            height: 56px;
+            background-color: #0eaf59;
+            border: 0;
+            right: 50px;
+            bottom: 9%;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            align-items: center;
+            transition: .3s;
+        }
+        .whatsapp:hover {
+            transform: scale(1.13);
+            transition: .3s;
+        }
+        .collapse.navbar-collapse {
+            justify-content: flex-end;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Taruh Disini -->
+    <header id="header" class="header fixed-top">
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html">
+                <img src="./image/logo.jpeg" alt="" width="50" height="34" class="d-inline-block align-text-top">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="location.html">Location</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>         
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- End of Navbar -->
+
+    <!-- Content of blog -->
+    <div class="container-fluid blog-section" style="height: 70px;">
+    </div>
+    <div class="container pt-5">
+        <div class="row justify-content-center mb-4">
+            <div class="col-4 justify-content-center">
+                <h2 class="text-center">Artikel Terbaru</h2>
+            </div>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col-4 justify-content-center align-items-center">
+                <div class="card my-3" data-aos="fade-up">
+                    <div class="float-left">
+                        <p>Digital Talent Accelerator</p>
+                    </div>
+                    <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/65e4a14e565f250ffc418357_cowomen-7Zy2KV76Mts-unsplash-p-500.jpg" class="card-img-top" alt="..." height="200px" style="border-radius: 10px 10px 0 0;">
+                    <div class="card-body pb-4 pt-4">
+                        <h5 class="card-title">Panduan Cara Menyusun CSV bagi Manajemen dan HC</h5>
+                        <p class="card-text py-4 text-secondary">Berikut adalah langkah-langkah yang perlu diketahui oleh manajemen dan Human Capital (HC) untuk membuat CSV yang efektif. Selengkapnya cek di sini!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card my-3" data-aos="fade-up">
+                    <div class="float-left">
+                        <p>Web Development</p>
+                    </div>
+                    <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/616d52df33f67966eaf712b5_616d52cd11484e6f1f47d869_BaruBelajarHTML_JanganSampaiNggakTauIstilah-IstilahCSSini-p-500.jpeg" class="card-img-top" alt="..." height="200px" style="border-radius: 10px 10px 0 0;">
+                    <div class="card-body pb-4 pt-4">
+                        <h5 class="card-title">Memahami Apa itu CSS, Istilah, dan Fungsi-fungsinya</h5>
+                        <p class="card-text py-4 text-secondary">Apa itu CSS? Cascading Style Sheets (CSS) adalah salah satu bahasa pemrograman dalam HTML. Simak pengertian, istilah, dan fungsi lengkapnya di sini</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card my-3" data-aos="fade-up">
+                    <div class="float-left">
+                        <p>General</p>
+                    </div>
+                    <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/61680eaf8cc924623f336d5e_Tipskeuanganuntukpekerjafreelance-p-800.jpeg" class="card-img-top" alt="..." height="200px" style="border-radius: 10px 10px 0 0;">
+                    <div class="card-body pb-4 pt-4">
+                        <h5 class="card-title">6 Cara Mengatur Keuangan untuk Freelancer, Wajib Tau!</h5>
+                        <p class="card-text py-4 text-secondary">Kamu pekerja freelance? Simak ulasan lengkap seputar cara mengatur keuangan untuk freelancer berikut ini. Sudahkah kamu terapkan?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card my-3" data-aos="fade-up">
+                    <div class="float-left">
+                        <p>Product Management</p>
+                    </div>
+                    <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/61680dc1d05a72604471bd37_Tutorial-1.jpg" class="card-img-top" alt="..." height="200px" style="border-radius: 10px 10px 0 0;">
+                    <div class="card-body pb-4 pt-4">
+                        <h5 class="card-title">Stakeholder Management: Pengertian dan Panduannya</h5>
+                        <p class="card-text py-4 text-secondary">Stakeholder Management adalah salah satu skill penting yang wajib dimiliki seorang Product Manager. Cari tau selengkapnya tentang skill ini.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card my-3" data-aos="fade-up">
+                    <div class="float-left">
+                        <p>Web Development</p>
+                    </div>
+                    <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/616d42cc2b1c46bfde59c3f2_616d41a78d34bc7736cc0519_caspar-camille-rubin-fPkvU7RDmCo-unsplash-scaled-p-1080.jpeg" class="card-img-top" alt="..." height="200px" style="border-radius: 10px 10px 0 0;">
+                    <div class="card-body pb-4 pt-4">
+                        <h5 class="card-title">10 Bahasa Pemrograman Dasar Terpopuler, Kamu Wajib Tahu!</h5>
+                        <p class="card-text py-4 text-secondary">Mulai dari C hingga Javascript, pahami apa itu bahasa pemrograman dan contoh bahasa pemrograman dasar terpopuler di kalangan Developer!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card my-3" data-aos="fade-up">
+                    <div class="float-left">
+                        <p>Mobile Development</p>
+                    </div>
+                    <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/616d50d493e44a61942786d1_616d50b9a60d2a02d3be1545_ilya-pavlov-OqtafYT5kTw-unsplash-p-500.jpeg" class="card-img-top" alt="..." height="200px" style="border-radius: 10px 10px 0 0;">
+                    <div class="card-body pb-4 pt-4">
+                        <h5 class="card-title">6 Bahasa Pemrograman Android dan Hal yang perlu Diketahui</h5>
+                        <p class="card-text py-4 text-secondary">Sebelum membuat aplikasi Android sendiri, kenali bahasa pemrograman Android beserta beberapa hal yang wajib kamu ketahui sebelum memulai.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card my-3" data-aos="fade-up">
+                    <div class="float-left">
+                        <p>Web Development</p>
+                    </div>
+                    <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/616fb657512895ebe4f0e1fb_close-up-man-writing-code-laptop%20(1)-p-1080.jpeg" class="card-img-top" alt="..." height="200px" style="border-radius: 10px 10px 0 0;">
+                    <div class="card-body pb-4 pt-4">
+                        <h5 class="card-title">9 Situs Belajar Coding Online Gratis Terbaik untuk Pemula</h5>
+                        <p class="card-text py-4 text-secondary">Bingung bagaimana cara belajar coding secara otodidak? Berikut beberapa pilihan situs yang dapat membantu kamu belajar coding online gratis!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card my-3" data-aos="fade-up">
+                    <div class="float-left">
+                        <p>UI/UX</p>
+                    </div>
+                    <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/6174d347908cc3613fbf7ea6_glen-carrie-6VCX7DuzYc4-unsplash-p-1080.jpeg" class="card-img-top" alt="..." height="200px" style="border-radius: 10px 10px 0 0;">
+                    <div class="card-body pb-4 pt-4">
+                        <h5 class="card-title">Perbedaan UX Designer, UX Researcher, dan UX Writer</h5>
+                        <p class="card-text py-4 text-secondary">Penasaran apa perbedaan UX Designer, UX Researcher, dan UX Writer? Simak penjelasan lengkap seputar User Experience (UX) di Binar Academy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card my-3" data-aos="fade-up">
+                    <div class="float-left">
+                        <p>Cerita Alumni</p>
+                    </div>
+                    <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/617517daf66145c73a05ee36_%23CeritaAlumni%20Uray%20Febri-%20Belajar%20Coding%20Ternyata%20Nggak%20Pusing!-p-500.jpeg" class="card-img-top" alt="..." height="200px" style="border-radius: 10px 10px 0 0;">
+                    <div class="card-body pb-4 pt-4">
+                        <h5 class="card-title">#CeritaAlumni Uray Febri: Belajar Coding Ternyata Nggak Pusing!</h5>
+                        <p class="card-text py-4 text-secondary">Uray Febri yang merupakan salah satu alumni Binar Bootcamp kelas Android Engineering membagikan pengalaman menariknya. Simak selengkapnya yuk!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="feedback" data-aos="zoom-in">
+        <p>Feedback</p>
+        <img src="" alt="">
+    </button>
+    <button class="whatsapp">
+        <img src="https://assets-global.website-files.com/5e70b9a791ceb781b605048c/65ce50a2f77101687560bd20_whatsappMonochrome.svg" alt="">
+    </button>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- AOS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
