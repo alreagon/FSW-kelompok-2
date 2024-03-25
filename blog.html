@@ -80,6 +80,54 @@
             justify-content: flex-end;
             background-color: #f5f5f5;
         }
+
+        /* Grid Section */
+        .grid-section {
+            display: grid;
+            column-gap: 20px;
+            row-gap: 20px;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 180px 180px;
+            background-color: aqua;
+        }
+        .grid-item {
+            background-color: #f89c1b;
+        }
+        .grid-section1 {
+            display: grid;
+            column-gap: 20px;
+            row-gap: 20px;
+            grid-template-columns: auto auto;
+            grid-template-rows: 180px 180px 180px 180px;
+            background-color: aqua;
+        }
+        .grid-item1 {
+            background-color: #f89c1b;
+        }
+        .grid-section2 {
+            display: grid;
+            column-gap: 20px;
+            row-gap: 20px;
+            grid-template-columns: auto auto;
+            grid-template-rows: 180px 180px 180px 180px 180px;
+            background-color: aqua;
+        }
+        .grid-item2 {
+            background-color: #f89c1b;
+            grid-row: 1 / 4;
+        }
+        .grid-section3 {
+            display: grid;
+            column-gap: 20px;
+            row-gap: 20px;
+            grid-template-columns: auto auto auto auto auto auto;
+            grid-template-rows: 90px 90px 90px 90px 90px;
+            background-color: aqua;
+        }
+        .grid-item3 {
+            background-color: #f89c1b;
+            grid-area: 1 / 2 / 5 / 6;
+        }
     </style>
 </head>
 <body>
@@ -114,7 +162,7 @@
     <!-- Content of blog -->
     <div class="container-fluid blog-section" style="height: 70px;">
     </div>
-    <div class="container pt-5">
+    <div class="container pt-5 mb-5">
         <div class="row justify-content-center mb-4">
             <div class="col-4 justify-content-center">
                 <h2 class="text-center">Artikel Terbaru</h2>
@@ -231,6 +279,65 @@
             </div>
         </div>
     </div>
+
+    <!-- Grid Section -->
+    <section class="container mb-5">
+        <h2 class="text-center py-4">Grid Section</h2>
+        <div class="grid-container">
+            <h3 class="my-3 text-center">1</h3>
+            <div class="grid-section mb-3">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+            </div>
+            <h3 class="my-3 text-center">2</h3>
+            <div class="grid-section1 mb-3">
+                <div class="grid-item1">1</div>
+                <div class="grid-item1">2</div>
+                <div class="grid-item1">3</div>
+                <div class="grid-item1">4</div>
+                <div class="grid-item1">5</div>
+                <div class="grid-item1">6</div>
+                <div class="grid-item1">7</div>
+                <div class="grid-item1">8</div>
+            </div>
+            <h3 class="my-3 text-center">3</h3>
+            <div class="grid-section2 mb-3">
+                <div class="grid-item2">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+            </div>
+            <h3 class="my-3 text-center">4</h3>
+            <div class="grid-section3 mb-3">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item3">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">10</div>
+                <div class="grid-item">11</div>
+                <div class="grid-item">12</div>
+                <div class="grid-item">13</div>
+                <div class="grid-item">14</div>
+                <div class="grid-item">15</div>
+            </div>
+        </div>
+    </section>
+
     <button class="feedback" data-aos="zoom-in">
         <p>Feedback</p>
         <img src="" alt="">
