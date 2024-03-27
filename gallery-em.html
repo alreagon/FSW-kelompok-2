@@ -5,10 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery-em</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            margin-top: 50px;
+        }
+        .container-gallery {
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .left-gallery {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .left-gallery img {
+            width: 90%;
+        }
+        .right-gallery {
+            margin: 10px 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .right-gallery h1 {
+            color: #933393;
+            font-size: 1.4em;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .right-gallery p {
+            font-size: .8em;
+            line-height: 24px;
+            text-align: justify;
+        }
+        .right-gallery button {
+            margin-top: 24px;
+            width: 90%;
+            height: 36px;
+            color: #fff;
+            background-color: #933393;
+            border: 0;
+            border-radius: 5px;
+        }
+        @media only screen and (min-width: 678px) {
+            .container-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .left-gallery img {
+                width: 400px;
+            }
+            .right-gallery {
+                width: 60%;
+                text-align: center;
+            }
+            .right-gallery button {
+                margin-top: 24px;
+                width: 90%;
+                height: 36px;
+                color: #fff;
+                background-color: #933393;
+                border: 0;
+                border-radius: 5px;
+            }
+            
+        }
+        @media only screen and (min-width: 976px) {
+            .container-gallery {
+                flex-direction: row;
+            }
+            .left-gallery {
+                width: 50%;
+            }
+            .left-gallery img {
+                width: 450px;
+            }
+            .right-gallery {
+                width: 50%;
+                text-align:left;
+            }
+            .right-gallery h1 {
+                color: #933393;
+                font-size: 2em;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                font-weight: 600;
+            }
+            .right-gallery p {
+                font-size: 1em;
+                line-height: 24px;
+            }
+            .right-gallery button {
+                margin-top: 24px;
+                width: 160px;
+                height: 39px;
+                color: #fff;
+                background-color: #933393;
+                border: 0;
+                border-radius: 5px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
+<div class="container">
+    <div class="container-gallery">
+        <div class="left-gallery">
+            <img src="https://assets-global.website-files.com/5e70b9a791ceb781b605048c/6126fb3d46bf878fead5b9ab_Sertifikat%20EAFC%202021-framed-p-500.png" alt="">
+        </div>
+        <div class="right-gallery">
+            <h1>Binar Memiliki Sertifikat Education Alliance Finland 2021</h1>
+            <p>Kurikulum Binar Bootcamp mendapatkan sertifikasi dari Education Alliance Finland (EAF), Keberhasilan ini didasari atas penilaian sempurna dari segi kualitas kurikulum, metode pembelajaran, pendekatan pengajaran kepada siswa, serta keselarasan kelas dengan kebutuhan industri, kini dan nanti.</p>
+            <button>Pelajari Lebih Lanjut</button>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
