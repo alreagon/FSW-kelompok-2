@@ -5,10 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery-rem</title>
+    <style>
+        html {
+            font-size: 12px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        .img-gallery {
+            display: flex;
+            gap: 2rem;
+        }
+        .img-photo{
+            flex-grow: 1;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .text-l{
+            font-size: 1rem;
+        }
+        .text-b{
+            font-size: 2rem;
+        }
+        .text-sb{
+            font-size: 2.5rem;
+        }
+
+        @media (max-width: 576px) {
+            html {
+                font-size: 16px;
+            }
+
+            .img-gallery {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-
 <body>
-
+    <div class="container">
+        <div class="img-gallery">
+            <img src="image/logo.jpeg" alt="1" class="img-photo">
+            <div class="text">
+                <p class="img-text text-l">asdfasdfadf</p>
+                <p class="img-text text-b">asdfasdfadfasdfssdf</p>
+                <p class="img-text text-sb">asdfasdfadfasdfssdf</p>
+            </div>
+        </div>
+        <div class="img-gallery">
+            <img src="image/logo.jpeg" alt="1" class="img-photo">
+            <div class="text">
+                <p class="img-text text-l">asdfasdfadf</p>
+                <p class="img-text text-b">asdfasdfadfasdfssdf</p>
+                <p class="img-text text-sb">asdfasdfadfasdfssdf</p>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
